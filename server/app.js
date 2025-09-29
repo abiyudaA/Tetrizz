@@ -20,6 +20,8 @@ const io = new socket_io_1.Server(httpServer, {
       "http://localhost:5173/",
       "https://tetrizz.vercel.app",
       "https://tetrizz.vercel.app/",
+      "https://teztrizbattle.vercel.app",
+      "https://teztrizbattle.vercel.app/",
     ],
     methods: ["GET", "POST"],
     credentials: false, // Ubah ke false
