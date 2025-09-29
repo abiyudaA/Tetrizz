@@ -11,7 +11,7 @@ const getServerUrl = () => {
   }
 
   // Fallback for local development
-  return "http://tetrizz-production.up.railway.app";
+  return "https://tetrizz-production.up.railway.app";
 };
 
 export const socket = io(getServerUrl(), {
