@@ -95,6 +95,19 @@ io.on("connection", (socket) => {
       socket.to(room.id).emit("opponent-game-over", data);
     }
   });
+  // Tambahkan event listener untuk game data setelah event "game-over"
+  socket.on("game-update", (data) => {
+    const room = getRoomBySocketId(socket.id);
+    if (room && room.status === "playing") {
+      // Kirim update game data ke lawan
+      socket.to(room.id).emit("opponent-game-update", {
+        playerId: socket.id,
+        points: data.points,
+        lines: data.lines,
+        username: data.username,
+      });
+    }
+  });
   socket.on("disconnect", () => {
     console.log("user disconnected with id:", socket.id);
     // Find and remove the player from any room
