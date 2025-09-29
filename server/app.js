@@ -18,8 +18,8 @@ const io = new socket_io_1.Server(httpServer, {
     origin: [
       "http://localhost:5173",
       "http://localhost:5173/",
-      "https://teztrizz.vercel.app",
-      "https://teztrizz.vercel.app/",
+      "https://tetrizz.vercel.app",
+      "https://tetrizz.vercel.app/",
     ],
     methods: ["GET", "POST"],
     credentials: true,
