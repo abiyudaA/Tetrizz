@@ -16,5 +16,6 @@ const getServerUrl = () => {
 
 export const socket = io(getServerUrl(), {
   autoConnect: false,
-  withCredentials: true,
+  withCredentials: false, // Ubah ke false
+  transports: ["websocket", "polling"], // Tambahkan fallback transport
 });

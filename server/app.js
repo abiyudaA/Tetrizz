@@ -22,8 +22,9 @@ const io = new socket_io_1.Server(httpServer, {
       "https://tetrizz.vercel.app/",
     ],
     methods: ["GET", "POST"],
-    credentials: true,
+    credentials: false, // Ubah ke false
   },
+  allowEIO3: true, // Tambahkan untuk kompatibilitas
 });
 const rooms = new Map();
 function getRoomBySocketId(socketId) {
