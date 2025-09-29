@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+.game-block {
+    margin: 0;
+    padding: 0;
+    width: 5em;
+    height: 2em;
+    border: 1px solid #00ff9d;
+  }
+  .piece-i {
+    background-color: #e8636a;
+  }
+  .piece-j {
+    background-color: #e48656;
+  }
+  .piece-l {
+    background-color: #ae9f2f;
+  }
+  .piece-o {
+    background-color: #5aa42f;
+  }
+  .piece-s {
+    background-color: #2f549b;
+  }
+  .piece-t {
+    background-color: #9c23bb;
+  }
+  .piece-z {
+    background-color: #219618ae;
+  }
+  .piece-preview {
+    background-color: #8f8f8fbd;
+  }
+
+
+/* tailwind */

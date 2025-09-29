@@ -1,0 +1,25 @@
+{
+  "name": "tetris-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.ts --exec ts-node app.ts",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "prepare": "npm run build"
+  },
+  "dependencies": {
+    "@types/express": "^5.0.1",
+    "@types/uuid": "^10.0.0",
+    "express": "^5.1.0",
+    "socket.io": "^4.8.1",
+    "typescript": "^5.8.3",
+    "uuid": "^11.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9",
+    "ts-node": "^10.9.2"
+  }
+}
